@@ -17,9 +17,7 @@ class AimSubmarine : MoveSubmarine {
     }
 
     override fun horizontal() = horizontal
-
     override fun depth() = depth
-
     fun aim() = aim
 
 }
