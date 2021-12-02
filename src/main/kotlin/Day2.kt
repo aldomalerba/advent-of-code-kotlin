@@ -10,5 +10,5 @@ class Day2(private val submarine: MoveSubmarine) {
 
     private fun String.steps() = split(" ").last().toInt()
     private fun String.direction() = split(" ").first()
-}
 
+}

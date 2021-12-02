@@ -16,7 +16,9 @@ class SubmarineTest {
     fun `increases the horizontal position by X units`() {
 
         val submarine = Submarine()
+
         submarine.execute("forward",5)
+
         assertEquals(5, submarine.horizontal())
     }
 
@@ -24,7 +26,9 @@ class SubmarineTest {
     fun `increases depth by X units`() {
 
         val submarine = Submarine()
+
         submarine.execute("down", 5)
+
         assertEquals(5, submarine.depth())
     }
 
@@ -32,8 +36,10 @@ class SubmarineTest {
     fun `decreases depth by X units`() {
 
         val submarine = Submarine()
+
         submarine.execute("down", 8)
         submarine.execute("up", 5)
+
         assertEquals(3, submarine.depth())
     }
 }

@@ -13,9 +13,11 @@ class Day2Test{
 
         every { submarine.horizontal() } returns 15
         every { submarine.depth() } returns 10
+
         val result = Day2(submarine).execute(listOf("anyCommand 1", "anyCommand 2", "anyCommand 3"))
 
         verify(exactly = 3) { submarine.execute(any(), any()) }
+
         assertEquals(150, result)
     }
 }
