@@ -2,8 +2,8 @@ import java.io.File
 
 fun main(args: Array<String>) {
 
-    val day1Input = File("src","Day1.txt").readLines().map { it.trim().toInt() }
-    val day1Output = Day1().execute(day1Input, 3)
-    println(day1Output)
+    val input = File("src","Input.txt").readLines().map { it.trim() }
+    val output = Day2(Submarine()).execute(input)
+    println(output)
 
 }

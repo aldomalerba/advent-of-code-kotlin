@@ -3,18 +3,14 @@ class Submarine : MoveSubmarine {
     private var horizontal = 0
     private var depth = 0
 
-    override fun execute(command: String) {
+    override fun execute(direction: String, steps: Int) {
 
-        when (command.direction()) {
-            "forward" -> horizontal += command.steps()
-            "up" -> depth -= command.steps()
-            else -> depth += command.steps()
+        when (direction) {
+            "forward" -> horizontal += steps
+            "up" -> depth -= steps
+            else -> depth += steps
         }
     }
-
-    private fun String.steps() = split(" ").last().toInt()
-
-    private fun String.direction() = split(" ").first()
 
     override fun horizontal(): Int {
         return horizontal;
