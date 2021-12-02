@@ -14,6 +14,6 @@ class Submarine : MoveSubmarine {
 
     override fun horizontal() = horizontal
 
-    override fun depth() = horizontal
+    override fun depth() = depth
 
 }
