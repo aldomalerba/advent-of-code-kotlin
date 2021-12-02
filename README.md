@@ -2,7 +2,7 @@
 
 My advent-of-code-2021 solutions with Kotlin
 
-| | #1 | #2 | :computer: |
+| :calendar: :christmas_tree: | :one: | :two: | :computer: |
 | :---: | :---: | :---: | :---: |
 | Day 1 | :heavy_check_mark: | :heavy_check_mark: | [Source](src/main/kotlin/Day2.kt) |
 | Day 2 | :heavy_check_mark: | :heavy_check_mark: | [Source](src/main/kotlin/Day2.kt) |
