@@ -1,6 +1,7 @@
 package e2e
 
 import Day3
+import DiagnosticReport
 import org.junit.jupiter.api.Disabled
 import org.junit.jupiter.api.Test
 import kotlin.test.assertEquals
@@ -11,7 +12,7 @@ class Day3AcceptanceTest {
     @Test
     fun `happy path`() {
 
-        val result = Day3().execute(
+        val result = Day3(DiagnosticReport()).execute(
             listOf(
             "00100",
             "11110",

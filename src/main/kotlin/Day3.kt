@@ -1,9 +1,9 @@
 import java.io.File
 
-class Day3 {
+class Day3(private val report: DiagnosticReport) {
 
     fun execute(numbers: List<String>): Int {
-        TODO()
+        return report.powerConsumption(numbers)
     }
 
 }
