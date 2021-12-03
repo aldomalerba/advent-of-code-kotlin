@@ -2,11 +2,9 @@ package e2e
 
 import Day3
 import DiagnosticReport
-import org.junit.jupiter.api.Disabled
 import org.junit.jupiter.api.Test
 import kotlin.test.assertEquals
 
-@Disabled
 class Day3AcceptanceTest {
 
     @Test

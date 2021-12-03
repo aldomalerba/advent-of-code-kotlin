@@ -11,6 +11,8 @@ class Day3(private val report: DiagnosticReport) {
 
 fun main() {
 
-    val input = File("src","Day2.txt").readLines().map { it.trim() }
-    
+    val input = File("src","Day3.txt").readLines().map { it.trim() }
+    val output = Day3(DiagnosticReport()).execute(input)
+    println(output)
+
 }
