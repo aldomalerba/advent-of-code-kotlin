@@ -12,4 +12,9 @@ class DiagnosticReport {
          return Integer.parseInt(binaryGamma.joinToString(""), 2)
     }
 
+    fun epsilon(numbers: List<String>): Int {
+        val binaryGamma = (0 until 5).map { index -> numbers.map{ it[index].toString() }.groupingBy { it }.eachCount().minByOrNull { it.value }?.key }
+        return Integer.parseInt(binaryGamma.joinToString(""), 2)
+    }
+
 }
