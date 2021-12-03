@@ -3,7 +3,7 @@ import kotlin.streams.toList
 class DiagnosticReport {
 
     fun powerConsumption(numbers: List<String>): Int {
-        TODO("Not yet implemented")
+        return gamma(numbers) * epsilon(numbers)
     }
 
     fun gamma(numbers: List<String>): Int {
