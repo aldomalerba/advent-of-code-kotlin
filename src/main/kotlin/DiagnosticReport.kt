@@ -22,7 +22,7 @@ class DiagnosticReport {
 
     private fun List<String>.mostCommonBitAt(index: Int) = sortedDescending().countEachBit(index).maxByOrNull { it.value }?.key
 
-    private fun List<String>.leastCommonBitAt(index: Int) = countEachBit(index).minByOrNull { it.value }?.key
+    private fun List<String>.leastCommonBitAt(index: Int) = sorted().countEachBit(index).minByOrNull { it.value }?.key
 
     fun oxygenGenerator(numbers: List<String>): Int {
 

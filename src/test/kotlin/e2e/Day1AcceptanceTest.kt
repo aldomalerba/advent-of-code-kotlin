@@ -1,6 +1,5 @@
 package e2e
-
-import Day1
+import day1.Day1
 import org.junit.jupiter.api.Assertions
 import org.junit.jupiter.api.Test
 

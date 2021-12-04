@@ -1,3 +1,5 @@
+package day2
+
 class AimSubmarine : MoveSubmarine {
 
     private var horizontal = 0

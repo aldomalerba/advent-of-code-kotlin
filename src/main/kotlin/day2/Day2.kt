@@ -1,3 +1,5 @@
+package day2
+
 import java.io.File
 
 class Day2(private val submarine: MoveSubmarine) {

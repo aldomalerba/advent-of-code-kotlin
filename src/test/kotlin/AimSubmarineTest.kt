@@ -1,3 +1,4 @@
+import day2.AimSubmarine
 import org.junit.jupiter.api.Assertions.*
 import org.junit.jupiter.api.Test
 

@@ -1,3 +1,5 @@
+package day2
+
 interface MoveSubmarine {
 
     fun execute(command: String, steps: Int)
