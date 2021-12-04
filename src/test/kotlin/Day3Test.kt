@@ -1,3 +1,4 @@
+import day3.DiagnosticReport
 import io.mockk.every
 import io.mockk.mockk
 import io.mockk.verify

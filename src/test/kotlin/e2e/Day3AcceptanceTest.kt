@@ -1,6 +1,6 @@
 package e2e
 
-import DiagnosticReport
+import day3.DiagnosticReport
 import org.junit.jupiter.api.Test
 import kotlin.test.assertEquals
 
