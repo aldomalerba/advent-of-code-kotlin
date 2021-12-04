@@ -7,15 +7,15 @@ class DiagnosticReport {
     }
 
     fun lifeSupport(numbers: List<String>): Int {
-        return  co2Scrubber(numbers) * oxygenGenerator(numbers)
+        return co2Scrubber(numbers) * oxygenGenerator(numbers)
     }
 
     fun gamma(numbers: List<String>): Int {
-         return (0 until numbers.first().count()).map { index -> numbers.mostCommonBitAt(index)!! }.toDecimal()
+        return List(numbers.first().count()) { i -> numbers.mostCommonBitAt(i) }.toDecimal()
     }
 
     fun epsilon(numbers: List<String>): Int {
-        return (0 until numbers.first().count()).map{ index -> numbers.leastCommonBitAt(index)!! }.toDecimal()
+        return List(numbers.first().count()) { i -> numbers.leastCommonBitAt(i) }.toDecimal()
     }
 
     fun oxygenGenerator(numbers: List<String>, index: Int = 0): Int {
@@ -23,7 +23,7 @@ class DiagnosticReport {
         val bit = numbers.mostCommonBitAt(index)
         val filtered = numbers.filter { it[index] == bit }
 
-        if(filtered.size == 1) return Integer.parseInt(filtered.first(), 2)
+        if (filtered.size == 1) return Integer.parseInt(filtered.first(), 2)
 
         return oxygenGenerator(filtered, index + 1)
 
@@ -34,7 +34,7 @@ class DiagnosticReport {
         val bit = numbers.leastCommonBitAt(index)
         val filtered = numbers.filter { it[index] == bit }
 
-        if(filtered.size == 1) return Integer.parseInt(filtered.first(), 2)
+        if (filtered.size == 1) return Integer.parseInt(filtered.first(), 2)
 
         return co2Scrubber(filtered, index + 1)
     }
@@ -42,10 +42,10 @@ class DiagnosticReport {
 
     private fun List<Char?>.toDecimal() = Integer.parseInt(joinToString(""), 2)
 
-    private fun List<String>.countEachBit(index: Int) = map { it[index] }.groupingBy { it }.eachCount()
+    private fun List<String>.countEachBitAt(index: Int) = map { it[index] }.groupingBy { it }.eachCount()
 
-    private fun List<String>.mostCommonBitAt(index: Int) = sortedDescending().countEachBit(index).maxByOrNull { it.value }?.key
+    private fun List<String>.mostCommonBitAt(index: Int) = sortedDescending().countEachBitAt(index).maxByOrNull { it.value }?.key
 
-    private fun List<String>.leastCommonBitAt(index: Int) = sorted().countEachBit(index).minByOrNull { it.value }?.key
+    private fun List<String>.leastCommonBitAt(index: Int) = sorted().countEachBitAt(index).minByOrNull { it.value }?.key
 
 }

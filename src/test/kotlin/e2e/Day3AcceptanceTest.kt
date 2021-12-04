@@ -31,7 +31,7 @@ class Day3AcceptanceTest {
     @Test
     fun `happy path part 2`() {
 
-        val result = DiagnosticReport().supportRating(
+        val result = DiagnosticReport().lifeSupport(
             listOf(
                 "00100",
                 "11110",
@@ -47,6 +47,6 @@ class Day3AcceptanceTest {
                 "01010")
         )
 
-        assertEquals(198, result)
+        assertEquals(230, result)
     }
 }
