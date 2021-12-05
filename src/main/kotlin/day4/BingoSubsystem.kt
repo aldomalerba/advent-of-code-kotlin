@@ -10,7 +10,7 @@ class BingoSubsystem {
     fun play(input: List<String>) : List<Int> {
 
         val numbers = input.first().split(",")
-        var boards = input.asSequence().drop(1).filter { it.isNotEmpty() }.windowed(5,5).map {
+        var boards = input.drop(1).filter { it.isNotEmpty() }.windowed(5,5).map {
             it.map { it.split(" +".toRegex()) }
         }.toMutableList()
 
