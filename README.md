@@ -9,7 +9,7 @@ My advent-of-code-2021 solutions with Kotlin
 |            Day 2            | :heavy_check_mark: | :heavy_check_mark:  | [Source](src/main/kotlin/day2/Day2.kt) |
 |            Day 3            | :heavy_check_mark: | :heavy_check_mark:  | [Source](src/main/kotlin/day3/Day3.kt) |
 |            Day 4            | :heavy_check_mark: | :heavy_check_mark:  | [Source](src/main/kotlin/day4/Day4.kt) |
-|            Day 5            |                    |                     |                                        |
+|            Day 5            | :heavy_check_mark: |                     |                                        |
 |            Day 6            |                    |                     |                                        |
 |            Day 7            |                    |                     |                                        |
 |            Day 8            |                    |                     |                                        |
