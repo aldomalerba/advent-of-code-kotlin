@@ -1,5 +1,6 @@
-package day2
-
+import day2.AimSubmarine
+import day2.MoveSubmarine
+import day2.Submarine
 import java.io.File
 
 class Day2(private val submarine: MoveSubmarine) {

@@ -1,5 +1,3 @@
-package day1
-
 import java.io.File
 
 class Day1 {
