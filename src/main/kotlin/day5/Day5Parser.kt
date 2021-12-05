@@ -4,14 +4,17 @@ class Day5Parser(private val strategy : Strategy) {
 
     fun points(vents: List<String>)  :List<Point>{
 
-        val parsesVents = vents.map {
-            it.split("->").map { it.trim() }.map {
+        val parseLines = vents.map {
+
+            val points = it.split("->").map { it.trim() }.map {
                 val coordinate = it.split(",").map { it.toInt() }
                 Point(coordinate.first(), coordinate.last())
             }
+
+            Line(points.first(), points.last())
         }
 
-        return strategy.parse(parsesVents)
+        return strategy.parse(parseLines)
     }
 
 }
