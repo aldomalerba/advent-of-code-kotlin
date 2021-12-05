@@ -1,17 +1,11 @@
 package day4
+import java.io.File
 
-class Day4(val bingo: BingoSubsystem) {
 
-    fun execute(input: List<String>) : Int {
-        val numbers = input.first().split(",").map{ it.toInt() }
-        val boards = input.drop(1).filter { it.isNotEmpty() }.windowed(5,5).map {
-            Board(
-                it.map { it.split(" +".toRegex()).map { it.toInt() } }
-            )
-        }
+fun main() {
 
-        bingo.play(numbers, boards)
-        return 0
-    }
-
+    val input = File("src","Day4.txt").readLines().map { it.trim() }
+    val winners = BingoSubsystem().play(input)
+    println("output part 1 " + winners.first())
+    println("output part 2 " + winners.last())
 }
