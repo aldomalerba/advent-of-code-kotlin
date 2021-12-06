@@ -1,7 +1,7 @@
 package e2e
 
 import day2.AimSubmarine
-import day2.Day2
+import Day2
 import day2.Submarine
 import org.junit.jupiter.api.Test
 import kotlin.test.assertEquals

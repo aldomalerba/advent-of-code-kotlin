@@ -1,10 +1,9 @@
+import day6.LanternFish
 import java.io.File
 
 class Day6 {
 
-        fun part1(input: List<String>): Int {
-                return 0
-        }
+        fun part1(input: List<String>) = LanternFish().execute(input.first(), 80)
 
         fun part2(input: List<String>): Int {
                 return 0
