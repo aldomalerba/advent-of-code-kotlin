@@ -3,29 +3,17 @@ package day6
 class LanternFish {
 
     fun execute(initialState: String, days: Int): Long {
-        var timers = initialState.split(",").map { it.toInt() }
-        return timers.sumOf { live(0, days, it) }
+        var timers = initialState.split(",").map { it.toInt() }.sorted()
+        return timers.groupingBy { it }.eachCount().map { live( days, it.key) * it.value }.sum()
     }
 
-    private fun live(start: Int, end: Int, timer: Int) : Long {
+    private fun live(end: Int, timer: Int) : Long {
 
-
-
-        var total : Long = 1
-        var age = timer
-
-        (start until end).forEach { day ->
-
-            if(age == 0) {
-                total += live(day+3, end, 6)
-                age = 6
-            } else {
-                age--
-            }
-        }
-
-        return total
+        if (timer >= end) return 1
+        return live(end, timer + 7) + live(end, timer + 9)
 
     }
 
 }
+
+
