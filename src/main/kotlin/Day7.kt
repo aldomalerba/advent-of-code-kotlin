@@ -5,10 +5,11 @@ import java.io.File
 
 class Day7 {
 
-        fun part1(input: List<String>) = FuelCalculator(MedianStrategy()).execute(input.first())
+        fun part1(input: List<String>) =
+                FuelCalculator(MedianStrategy()).execute(input.first())
 
-        fun part2(input: List<String>) = FuelCalculator(AverageStrategy()).execute(input.first())
-
+        fun part2(input: List<String>) =
+                FuelCalculator(AverageStrategy()).execute(input.first())
 }
 
 fun main() {
