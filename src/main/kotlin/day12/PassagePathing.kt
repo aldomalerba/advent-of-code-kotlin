@@ -14,7 +14,19 @@ class PassagePathing {
 
         }.filterNot { it.value.isEmpty() }
 
+
+        val value = "start"
+        val destinations = paths[value]!!
+        val path = listOf("start")
+
+
+
         return emptyList()
     }
 
 }
+
+//start, A, c,
+//start, A, b
+//start, A, end
+//start, b
