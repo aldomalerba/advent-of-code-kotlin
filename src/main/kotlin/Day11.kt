@@ -1,5 +1,4 @@
 import da11.DumboOctopus
-import day10.SyntaxScoring
 import java.io.File
 
 fun main() {
