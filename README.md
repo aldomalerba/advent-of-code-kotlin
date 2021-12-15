@@ -15,10 +15,10 @@ My advent-of-code-2021 solutions with Kotlin
 |            Day 8            | :heavy_check_mark:  | :heavy_check_mark:  | [Source](src/main/kotlin/Day8.kt) |
 |            Day 9            | :heavy_check_mark:  | :heavy_check_mark:  | [Source](src/main/kotlin/Day9.kt) |
 |           Day 10            | :heavy_check_mark:  | :heavy_check_mark:  | [Source](src/main/kotlin/Day10.kt) |
-|           Day 11            |                     |                     |                                   |
-|           Day 12            |                     |                     |                                   |
-|           Day 13            |                     |                     |                                   |
-|           Day 14            |                     |                     |                                   |
+|           Day 11            | :heavy_check_mark:  | :heavy_check_mark:  |                                   |
+|           Day 12            | :heavy_check_mark:  | :heavy_check_mark:  |                                   |
+|           Day 13            | :heavy_check_mark:  | :heavy_check_mark:  |                                   |
+|           Day 14            | :heavy_check_mark:  | :heavy_check_mark:  |                                   |
 |           Day 15            |                     |                     |                                   |
 |           Day 16            |                     |                     |                                   |
 |           Day 17            |                     |                     |                                   |
